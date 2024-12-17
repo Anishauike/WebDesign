@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Optimized Images</title>
+   </head>
+<style>
+ .products {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .product-card .price {
+            color: #d4b89a;
+            font-weight: bold;
+        }
+.hero{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+.hero-vidio{
+max-width:100%
+border-radius:5px;
+margin-bottom:15px;
+}
+
+</style>
+
+<section class="products">
+        <h2>Optimised Images</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="C:\Users\HP\Downloads\ring.jpg">
+                <h3>Image 1</h3>
+                <p>file format:JPG</p>
+                <p class="price">5.86KB</p>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\HP\Downloads\ring.jpg">
+                <h3>IMAGE 2</h3>
+                <p>FILE FORMAT:AVIF</p>
+                <p class="price">3.47KB</p>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\HP\Downloads\ring.avif">
+                <h3>Image 4</h3>
+                <p>file-format:WEBP</p>
+                <p class="price">4.61KB</p>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\HP\Downloads\ring.jpeg">
+                <h3>IMAGE 4</h3>
+                <p>file-format:JPEG</p>
+                <p class="price">4.86KB</p>
+              </div>
+           <div class="product-card">
+                <img src="C:\Users\HP\Downloads\ring.png">
+                <h3>IMAGE 5</h3>
+                <p>file-format:PNG</p>
+                <p class="price">49.9KB</p>
+            </div>
+        </div>
+              <div class="product-card">
+                <video src="C:\Users\HP\Downloads\Oreo_ Bubbles Of Play.mp4"></video>                    
+                <h3>Video</h3>
+                <p>file-format:MP4</p>
+               
+             </div>
+              <div class="product-card">
+                <audio controls>
+                <source src="C:\Users\HP\Downloads\Oreo_ Bubbles Of Play.mp3" type="audio/ogg">
+                 <source src="C:\Users\HP\Downloads\Oreo_ Bubbles Of Play.mp3" type="audio/mpeg">
+                </audio>              
+                <h3>Audio</h3>
+                <p>file-format:MP3</p>
+               
+            </div>
+               
+</body>
+</html>
