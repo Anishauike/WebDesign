@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Haven</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4b4a6f;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwcQ_Y-NUJ8a1yytSfOlt1ui-NrbKYBytIEA&s');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-content button {
+    padding: 12px 25px;
+    background-color: #f9c74f;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: #f39c12;
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product-item {
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.product-item .price {
+    font-size: 1.5rem;
+    color: #f39c12;
+    margin: 10px 0;
+}
+
+.product-item .description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.product-item ul {
+    list-style-type: none;
+}
+
+.product-item ul li {
+    font-size: 0.9rem;
+}
+
+/* Featured Product Highlight */
+.product-item.featured {
+    border: 2px solid #007bff;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4b4a6f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Jewelry Heaven</h1>
+            <nav>
+                <input type="text" placeholder="Search...">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Elegant Jewelry for Every Occasion</h2>
+            <p>Discover timeless pieces that define sophistication and style.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ieUu-GJrbF_Rx3vf286Seo1lphY5LBoJWA&s" alt="Elegant Necklace">
+                <h3>Elegant Necklace</h3>
+                <p class="price">$120.00</p>
+                <p class="description">This sophisticated necklace will catch everybody’s eye.</p>
+               
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item featured">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2hZTGFpfy2sTHoyjSBZtEs8aCg2K7fWPG8w&s" alt="Gold Bracelet">
+                <h3>Gold Bracelet</h3>
+                <p class="price">$90.00</p>
+                <p class="description">Make your outfit shine with beautifully crafted Gold Bracelets.</p>
+               
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3NiBvP58SVMT7Khohnyt7UBCBHp3LrEj_A&s" alt="Diamond Earrings">
+                <h3>Diamond Earrings</h3>
+                <p class="price">$150.00</p>
+                <p class="description">An exquisite collection of diamond earrings made of white, yellow and rose gold.</p>
+                
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAczMA0jQXQu_9OZQsyVy_AQBQM5p82JwT9A&s" alt="Sapphire Ring">
+                <h3>Sapphire Ring</h3>
+                <p class="price">$200.00</p>
+                <p class="description">Shop for exquisite Sapphire Rings in a variety of designs.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Jewelry Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
